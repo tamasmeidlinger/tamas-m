@@ -7,7 +7,7 @@ menuIcon.addEventListener("click", () => {
   sideBar.classList.add("side-bar-active");
 
   setTimeout(() => {
-    menuIcon.style.display = "none";
+    menuIcon.classList.add("hidden");
   }, 400);
 });
 
@@ -15,13 +15,17 @@ closeIcon.addEventListener("click", () => {
   sideBar.classList.remove("side-bar-active");
 
   setTimeout(() => {
-    menuIcon.style.display = "block";
-  }, 300);
+    menuIcon.classList.remove("hidden");
+  }, 200);
 });
 
 function checkWidth() {
   if (window.innerWidth > 460) {
-    sideBar.classList.remove("side-bar-active");
+    menuIcon.classList.add("hidden");
+  } else if (window.innerWidth <= 460) {
+    if (!sideBar.classList.contains("side-bar-active")) {
+      menuIcon.classList.remove("hidden");
+    }
   }
 }
 
