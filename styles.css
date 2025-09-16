@@ -1,6 +1,6 @@
 :root {
   --background-color: #1b1b2f;
-  --accent-color: #6a359c;
+  --accent-color: #451d6a;
   --buttons: #804fb3;
   --text-color: #d0ccfc;
 }
@@ -14,11 +14,12 @@
 html,
 body {
   font-size: 10px;
+  font-family: "Roboto";
   position: relative;
   width: 100%;
   min-height: 100vh;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 
   background-color: var(--background-color);
   color: var(--text-color);
@@ -41,7 +42,7 @@ body {
 }
 
 .website-name {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 4px 0 4px 0;
 }
@@ -132,4 +133,31 @@ body {
     margin: 0;
     padding: 0;
   } */
+}
+
+main {
+  padding: 50px 0 0 0;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.tamas-m {
+  font-size: 3rem;
+}
+
+.card {
+  margin: 10px auto 0 auto;
+  padding: 10px;
+  background-color: #451d6a85;
+  width: 80%;
+
+  border-radius: 10px;
+}
+
+.card.one {
+  text-align: center;
+  font-size: 2rem;
 }
