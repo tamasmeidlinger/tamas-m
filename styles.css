@@ -59,13 +59,13 @@ body {
 
   position: fixed;
   top: 0;
-  right: -100%;
+  right: -50%;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
-  transition: all ease 0.8s;
+  transition: all ease-in-out 0.7s;
 }
 
 /* .links * {
@@ -150,7 +150,7 @@ h1 {
   font-size: clamp(2rem, 10vw, 7rem);
 }
 .card {
-  margin: 10px auto 0 auto;
+  margin: 10px auto 10px auto;
   padding: 10px;
   background-color: #451d6a85;
   width: 80%;
@@ -161,4 +161,52 @@ h1 {
 .card.one {
   text-align: center;
   font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.p-container {
+  background-color: #451d6a85;
+  margin: 0 auto 0 auto;
+  padding: 14px;
+  width: 80%;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.projects {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid rgb(145, 255, 0);
+  min-width: 100px;
+  width: 30%;
+  height: auto;
+  aspect-ratio: 1/1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects::after {
+  content: "";
+  border: 1px solid rgb(145, 255, 0);
+  min-width: 100px;
+  width: 30%;
 }
