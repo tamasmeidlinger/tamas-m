@@ -1,0 +1,69 @@
+:root {
+  --background-color: #1b1b2f;
+  --accent-color: #451d6a;
+  --buttons: #804fb3;
+  --text-color: #d0ccfc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+h1,
+p {
+  text-align: center;
+  color: var(--text-color);
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.emojis {
+  margin: 30px 0 30px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  min-height: 100px;
+}
+
+.emoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 12vh;
+  padding: 10px;
+  font-size: 5rem;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  margin: 0 0 15px 0;
+}
+
+.emoji:hover {
+  transform: scale(1.16);
+}
+
+.scores {
+  padding: 0 25% 0 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.messages {
+  color: var(--text-color);
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+}
