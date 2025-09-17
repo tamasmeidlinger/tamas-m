@@ -65,7 +65,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
 
-  transition: all ease-in-out 0.7s;
+  transition: all ease-in-out 0.25s;
 }
 
 /* .links * {

@@ -39,8 +39,8 @@ rock.addEventListener("click", () => {
   userChoice = "Rock";
   bot = botChoice();
   result = hasWon(userChoice, bot);
-  playerChoiceMsg.innerText = "Your Choice: Rock";
-  computerChoiceMsg.innerText = `Computer's choice: ${bot}`;
+  playerChoiceMsg.innerText = "Rock";
+  computerChoiceMsg.innerText = `${bot}`;
   if (result === true) {
     roundResult.innerText = "You won";
     userScoreBtn.innerText = userScore += 1;
@@ -55,8 +55,8 @@ paper.addEventListener("click", () => {
   userChoice = "Paper";
   bot = botChoice();
   result = hasWon(userChoice, bot);
-  playerChoiceMsg.innerText = "Your Choice: Paper";
-  computerChoiceMsg.innerText = `Computer's choice: ${bot}`;
+  playerChoiceMsg.innerText = "Paper";
+  computerChoiceMsg.innerText = `${bot}`;
   if (result === true) {
     roundResult.innerText = "You won";
     userScoreBtn.innerText = userScore += 1;
@@ -71,8 +71,8 @@ scissors.addEventListener("click", () => {
   userChoice = "Scissors";
   bot = botChoice();
   result = hasWon(userChoice, bot);
-  playerChoiceMsg.innerText = "Your Choice: Scissors";
-  computerChoiceMsg.innerText = `Computer's choice: ${bot}`;
+  playerChoiceMsg.innerText = "Scissors";
+  computerChoiceMsg.innerText = `${bot}`;
   if (result === true) {
     roundResult.innerText = "You won";
     userScoreBtn.innerText = userScore += 1;
@@ -82,4 +82,19 @@ scissors.addEventListener("click", () => {
   } else if (result === "draw") {
     roundResult.innerText = "Draw";
   }
+});
+
+let resetBtn = document.querySelector(".reset-btn");
+
+resetBtn.addEventListener("click", () => {
+  userChoice = "";
+  bot = "";
+  result = "";
+  userScore = 0;
+  botScore = 0;
+  userScoreBtn.innerText = "0";
+  botScoreBtn.innerText = "0";
+  playerChoiceMsg.innerText = "";
+  computerChoiceMsg.innerText = ``;
+  roundResult.innerText = "";
 });

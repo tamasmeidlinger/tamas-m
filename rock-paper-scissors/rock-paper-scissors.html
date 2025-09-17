@@ -9,8 +9,14 @@
   <body>
     <h1>Rock, Paper, Scissors</h1>
     <div class="scores">
-      <p>Your Score: <span id="user-score">0</span></p>
-      <p>Computer's Score: <span id="bot-score">0</span></p>
+      <div class="scores-text">
+        <p>Your<br />Score:</p>
+        <p id="user-score">0</p>
+      </div>
+      <div class="scores-text">
+        <p>Opponents's Score:</p>
+        <p id="bot-score">0</p>
+      </div>
     </div>
     <div class="emojis">
       <div class="emoji" id="rock">✊</div>
@@ -19,10 +25,19 @@
     </div>
 
     <div class="messages">
-      <div class="player-choice-msg">Your Choice:</div>
       <div class="round-result"></div>
-      <div class="computer-choice-msg">Computer's Choice:</div>
+      <div class="choices-container">
+        <div class="choices-messages">
+          <p class="no-bold">Your<br />Choice:</p>
+          <p class="player-choice-msg"></p>
+        </div>
+        <div class="choices-messages">
+          <p class="no-bold">Opponents's<br />Choice:</p>
+          <p class="computer-choice-msg"></p>
+        </div>
+      </div>
     </div>
+    <button class="reset-btn">Reset</button>
 
     <script src="script.js"></script>
   </body>
