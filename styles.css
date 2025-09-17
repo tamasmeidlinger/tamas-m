@@ -170,10 +170,12 @@ a {
 
 h2 {
   text-align: center;
-  margin: 0 0 15px 0;
+  margin: 0 0 30px 0;
+  font-size: clamp(2rem, 6vw, 6rem);
 }
 
 .p-container {
+  border-radius: 10px;
   background-color: #451d6a85;
   margin: 0 auto 0 auto;
   padding: 14px;
@@ -198,12 +200,14 @@ h2 {
 }
 
 .project {
-  border: 1px solid rgb(145, 255, 0);
+  background-color: #50247a85;
+  padding: 10px;
   min-width: 100px;
-  width: 30%;
+  width: 40%;
   height: auto;
   aspect-ratio: 1/1;
 
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,7 +215,12 @@ h2 {
 
 .projects::after {
   content: "";
-  border: 1px solid rgb(145, 255, 0);
   min-width: 100px;
-  width: 30%;
+  width: 40%;
+}
+
+.project img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
