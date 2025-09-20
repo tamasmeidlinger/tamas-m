@@ -1,0 +1,161 @@
+:root {
+  --background-color: #1b1b2f;
+  --accent-color: #451d6a;
+  --buttons: #804fb3;
+  --text-color: #d0ccfc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  position: relative;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 20px 0 0 0;
+}
+
+.buttons button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.to-do-container {
+  width: 70%;
+  height: 80vh;
+  margin: 20px auto;
+  padding: 28px 30px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.to-do-container p {
+  margin: 0 0 0 20px;
+}
+
+.to-do-container p::before {
+  content: "";
+}
+
+.add-task-container {
+  width: 70%;
+  height: 80vh;
+  margin: 20px auto;
+  padding: 0 0 0 0;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border-radius: 10px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 2rem;
+}
+
+.add-task {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-task input {
+  font-size: 2rem;
+}
+
+.add-task-container button {
+  background-color: var(--buttons);
+  color: var(--text-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.task {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0 0 30px 0;
+}
+
+input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  background-color: #451d6a;
+}
+
+@media (max-width: 711px) {
+  .add-task-container {
+    width: 70%;
+    height: 80vh;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 10px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .add-task input {
+    font-size: 2rem;
+    width: 70%;
+  }
+
+  .add-task-container button {
+    background-color: var(--buttons);
+    color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    margin: 50px 0 0 0;
+    align-self: center;
+  }
+  .hidden {
+    display: none;
+  }
+}

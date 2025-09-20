@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link rel="stylesheet" href="to-do-styles.css" />
+  </head>
+  <body>
+    <!-- BUTTONS -->
+    <div class="buttons">
+      <button id="add-new-task">Add</button>
+      <button id="remove-btn">Remove</button>
+    </div>
+    <!-- TO-DO -->
+    <div class="to-do-container"></div>
+    <!-- ADD TASK -->
+    <div class="add-task-container hidden">
+      <div class="add-task">
+        <label for="name">Task name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <button type="submit">Add</button>
+    </div>
+    <script src="to-do-script.js"></script>
+  </body>
+</html>
